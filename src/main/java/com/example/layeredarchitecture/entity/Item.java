@@ -1,20 +1,17 @@
-package com.example.layeredarchitecture.model;
+package com.example.layeredarchitecture.entity;
 
-import java.io.Serializable;
 import java.math.BigDecimal;
 
-
-
-public class ItemDTO implements Serializable {
+public class Item {
     private String code;
     private String description;
     private BigDecimal unitPrice;
     private int qtyOnHand;
 
-    public ItemDTO() {
+    public Item() {
     }
 
-    public ItemDTO(String code, String description, BigDecimal unitPrice, int qtyOnHand) {
+    public Item(String code, String description, BigDecimal unitPrice, int qtyOnHand) {
         this.code = code;
         this.description = description;
         this.unitPrice = unitPrice;
